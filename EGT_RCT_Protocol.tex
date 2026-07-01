@@ -1,0 +1,659 @@
+% =============================================================================
+%  EGT-RCT Protocol: A Double-Blind, Placebo-Controlled Trial of Ergothioneine
+%  for Slowing Epigenetic Aging in Healthy Adults Aged 50-70 Years
+% =============================================================================
+\documentclass[11pt,a4paper]{article}
+
+% ---- Packages ----
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.8cm, right=2.8cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+% ---- Header / Footer ----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{EGT--Epigenetic Aging RCT}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ---- Document ----
+\onehalfspacing
+
+\begin{document}
+
+% =============================================================================
+%  TITLE PAGE
+% =============================================================================
+\begin{titlepage}
+\centering
+\vspace*{3cm}
+
+{\LARGE\bfseries Targeting Epigenetic Drift in Human Aging:\\[4pt]
+A Double-Blind, Placebo-Controlled Randomized Trial of\\[4pt]
+Ergothioneine Supplementation in Healthy Adults Aged 50--70 Years}
+
+\vspace{2cm}
+
+{\large Study Protocol -- Version 1.0}
+
+\vspace{1.5cm}
+
+{\large Michael Barrow}
+
+\vspace{0.5cm}
+{\large Stanford University / King Cell Jiamei}
+
+\vspace{2cm}
+{\large \today}
+
+\vspace{4cm}
+\end{titlepage}
+
+% =============================================================================
+%  TABLE OF CONTENTS
+% =============================================================================
+\newpage
+\tableofcontents
+\newpage
+
+% =============================================================================
+%  SECTION 1: BACKGROUND AND RATIONALE
+% =============================================================================
+\section{Background and Rationale}
+
+\subsection{Epigenetic Aging as a Therapeutic Target}
+
+Aging is the predominant risk factor for nearly all chronic diseases of late life \cite{aroddd2025,natureaging2025}. Among the hallmarks of aging, epigenetic drift (the progressive loss of fidelity in DNA methylation patterns) has emerged as both a quantifiable biomarker and a potential mechanistic driver of age-related decline \cite{horvath2013, brunet2023}. The development of DNA methylation clocks has enabled the precise measurement of biological age, with second- and third-generation clocks (PhenoAge, GrimAge/GrimAge2, DunedinPACE) outperforming first-generation models for predicting morbidity and mortality \cite{levine2018, lu2019, belsky2022, tan2026}.
+
+Importantly, epigenetic age acceleration (EAA) is modifiable. Recent randomized controlled trials have demonstrated that pharmacological interventions can slow or reverse epigenetic aging: semaglutide reduced EAA in people with HIV \cite{corley2025}, tenofovir-based antiretroviral therapy decreased biological age in healthy adults \cite{anderson2026}, and dietary weight-loss interventions attenuated EAA in obese individuals \cite{kou2025}. These findings establish that DNAm clocks are responsive to intervention within 6--18 months, opening the door to nutraceutical strategies.
+
+\subsection{Ergothioneine: A Unique Cytoprotective Agent}
+
+Ergothioneine (EGT) is a naturally occurring sulfur-containing amino acid derivative acquired exclusively through diet and concentrated in tissues via the highly selective OCTN1 transporter (SLC22A4) \cite{cheah2012}. Unlike conventional antioxidants, EGT accumulates in mitochondria and long-lived tissues (erythrocytes, liver, kidney, lens of the eye, skin) where it exerts potent cytoprotective effects against oxidative stress, mitochondrial dysfunction, and cellular senescence \cite{gede2025}.
+
+Preclinical evidence links EGT to the SIRT6 pathway, a key regulator of DNA repair, telomere maintenance, and metabolic homeostasis. EGT depletion accelerates aging phenotypes in animal models, while supplementation extends healthspan. In humans, low circulating EGT is associated with increased risk of cognitive decline, cardiovascular disease, and frailty \cite{yau2024,gallagher2023}. A pilot study of EGT in mild cognitive impairment showed promising signals for cognitive preservation \cite{yau2024}.
+
+\subsection{Knowledge Gap and Rationale}
+
+Despite the epidemiological and preclinical evidence linking EGT to aging biology, no study has tested whether EGT supplementation modulates epigenetic aging in healthy humans. The present protocol addresses this gap with a fully powered, 12--18-month, double-blind, placebo-controlled RCT with comprehensive multi-domain endpoints including second- and third-generation DNAm clocks, functional aging measures (cognition, skin aging, physical function), and mechanistic biomarkers.
+
+\subsection{Central Hypothesis}
+
+We hypothesize that 12--18 months of oral EGT supplementation slows the rate of epigenetic drift in healthy adults aged 50--70 years, as measured by multiple independently validated DNA methylation clocks, and produces detectable improvements in functional aging endpoints that are sensitive before overt clinical disease develops.
+
+% =============================================================================
+%  SECTION 2: SPECIFIC AIMS
+% =============================================================================
+\section{Specific Aims}
+
+\textbf{Aim 1 (Primary).} Determine whether 12--18 months of oral EGT supplementation reduces the rate of biological aging relative to placebo, measured as change in DNAm age acceleration using three independently validated clocks: GrimAge2, PhenoAge, and DunedinPACE.
+
+\textbf{Aim 2 (Secondary--Mechanistic).} Quantify EGT-mediated changes in (a) plasma ergothioneine as a pharmacodynamic marker of compliance and bioavailability, (b) inflammatory markers (IL-6, hs-CRP, TNF-$\alpha$), and (c) oxidative stress indices (8-OHdG, GSH/GSSG ratio, protein carbonyls).
+
+\textbf{Aim 3 (Secondary--Functional).} Detect between-group differences in functional aging trajectories that remain sensitive before overt disease: (a) computerized cognitive testing (episodic memory, processing speed, executive function), (b) quantitative skin aging (elasticity, hydration, wrinkle imaging, pigmentation), (c) grip strength, and (d) gait speed.
+
+\textbf{Aim 4 (Exploratory).} Assess patient-reported outcomes for sleep quality (Pittsburgh Sleep Quality Index, PSQI) and fatigue (Fatigue Severity Scale, FSS) as exploratory endpoints, and evaluate the correlation between changes in epigenetic clock acceleration and changes in functional outcomes.
+
+% =============================================================================
+%  SECTION 3: STUDY DESIGN
+% =============================================================================
+\section{Study Design}
+
+\subsection{Overview}
+
+This is a single-site, randomized, double-blind, placebo-controlled, parallel-group superiority trial with two arms (EGT vs.~placebo) in a 1:1 allocation ratio. The total study duration per participant is 12 months, with an optional 6-month extension (18 months total) contingent on interim data review. The study design follows CONSORT 2010 guidelines \cite{consort2010} and the SPIRIT 2013 statement for clinical trial protocols \cite{spirit2013}. The trial is registered at ClinicalTrials.gov prior to enrollment.
+
+\begin{figure}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\multicolumn{6}{|c|}{\textbf{Study Schema}} \\ \hline
+\textbf{V0} & $\rightarrow$ & \textbf{V1} & $\rightarrow$ & \textbf{V2} & $\rightarrow$ \\
+Screen/Run-in & & Baseline + Randomization & & Midpoint (6mo) & \\
+\hline
+\multicolumn{6}{|c|}{$\downarrow$} \\ \hline
+\textbf{V3} & & \textbf{(V4)} & $\rightarrow$ & \textbf{Analysis} \\
+Endpoint (12mo) & & Optional (18mo) & & & \\
+\hline
+\end{tabular}
+\caption{Study schema with screening, baseline, 6-month midpoint, and 12-month primary endpoint. An optional 6-month extension (V4, 18 months) is included contingent on interim data review.}
+\end{figure}
+
+\subsection{Randomization and Allocation Concealment}
+
+Participants are randomized 1:1 to EGT or matching placebo using permuted block randomization with randomly varying block sizes of 4 and 6, stratified by sex (male/female) and age decade (50--59 vs.~60--70 years). The randomization sequence is generated by an independent statistician using validated software (R package \texttt{blockrand}) and uploaded to the electronic data capture system. Allocation is concealed using sequentially numbered, opaque, sealed envelopes that are opened only after a participant has completed all baseline assessments and been confirmed eligible. The allocation sequence is inaccessible to all study personnel involved in recruitment, assessment, or data analysis.
+
+\subsection{Blinding}
+
+The study is triple-masked: participants, investigators, outcome assessors, and the study statistician are blinded to treatment assignment until after the primary analysis is complete. EGT capsules and matching placebo capsules are identical in appearance, taste, and packaging. A single unblinded pharmacist (not involved in assessments) prepares the study drug.
+
+\subsection{Power Analysis and Sample Size}
+
+Sample size is calculated for the primary endpoint: change in GrimAge2 EAA from baseline to 12 months. The most directly relevant precedent is the recent semaglutide RCT \cite{corley2025}, which reported an adjusted mean reduction in GrimAgeV2 of 2.26 years (95\% CI: -3.94 to -0.59, p = 0.008) and in DunedinPACE of 0.09 units (95\% CI: -0.17 to -0.02, p = 0.01) over 32 weeks in 84 participants. The dietary intervention trial reported Cohen's d = 0.55 for EAA change \cite{kou2025}. We conservatively estimate a standardized effect size of $\delta = 0.50$.
+
+With $\alpha = 0.05$ (two-sided), power $= 0.80$, and a 1:1 allocation ratio, a total of N = 128 participants (64 per arm) is required using a two-sample $t$-test. Adjusting for 20\% attrition over 12--18 months, we enroll N = 160 participants (80 per arm). This sample also provides >80\% power to detect clinically meaningful between-group differences in the secondary functional endpoints: gait speed (0.05 m/s), grip strength (2.5 kg), and cognitive domain scores ($d = 0.4$), based on normative aging data \cite{studenski2003, bohannon2012}.
+
+\subsection{Setting}
+
+The study is conducted at a single academic medical center with an established clinical research unit (Stanford University / clinical partner). Blood processing, DNA methylation profiling, and biomarker assays are performed at certified laboratories.
+
+% =============================================================================
+%  SECTION 4: PARTICIPANTS
+% =============================================================================
+\section{Participants}
+
+\subsection{Inclusion Criteria}
+
+\begin{enumerate}[nosep]
+  \item Male or female, aged 50--70 years at screening.
+  \item Generally healthy, as determined by medical history, physical examination, and standard laboratory panels (CBC, CMP, TSH).
+  \item Body mass index (BMI) 18.5--32~kg/m$^2$.
+  \item Willing to maintain habitual diet, exercise, and supplement use (excluding EGT-containing products) throughout the study.
+  \item Willing to discontinue any EGT-containing supplements or mushroom-derived supplements for a 4-week washout prior to baseline.
+  \item Willing and able to provide written informed consent.
+\end{enumerate}
+
+\subsection{Exclusion Criteria}
+
+\begin{enumerate}[nosep]
+  \item Current or recent (within 12 weeks) use of systemic corticosteroids, immunosuppressants, or chemotherapy.
+  \item Diagnosis of diabetes (Type~1 or Type~2), uncontrolled hypertension (BP $>$160/100~mmHg), or known cardiovascular disease (MI, stroke, heart failure within 5 years).
+  \item Active malignancy (except non-melanoma skin cancer) or history of cancer within 5 years.
+  \item Chronic kidney disease (eGFR $<$45~mL/min/1.73~m$^2$), hepatic dysfunction (ALT $>$3$\times$ ULN), or anemia (Hb $<$11~g/dL).
+  \item Current smoker or nicotine user.
+  \item Use of anti-aging or longevity interventions within 12 weeks of screening (metformin, NMN/NR, rapamycin, growth hormone, or other investigational agents).
+  \item OCTN1 genotype known to abolish EGT transport (SLC22A4 rare loss-of-function variants such as nonsense mutations). These are very rare (<1\% of the population) \cite{urban2007}. OCTN1 genotyping is performed at screening primarily for population characterization and pre-specified subgroup analysis rather than as a routine exclusion criterion. Only individuals carrying genotypes expected to completely abolish transporter function are excluded.
+  \item Known allergy or intolerance to ergothioneine or mushroom-derived products.
+  \item Pregnancy, breastfeeding, or planned pregnancy within the study period.
+  \item Participation in another interventional clinical trial concurrently or within 30 days.
+  \item Any condition that, in the investigator's judgment, would compromise participant safety or study integrity.
+\end{enumerate}
+
+\subsection{Recruitment and Retention}
+
+The primary recruitment site is the Fifth Affiliated Hospital of Sun Yat-sen University (Zhuhai, China), with King Cell Jiamei as the sponsoring institution. Participants are recruited through outpatient clinic referrals, community health center advertising, and existing research participant registries at the hospital. An alternative recruitment pathway may be established at a Stanford University teaching hospital if funding and collaborative agreements permit.
+
+Retention strategies include: flexible visit scheduling, monetary compensation for time and travel (\$100 per complete visit, \$600 total for 12-month completers), travel reimbursement, culturally appropriate participant communications, and quarterly newsletters summarizing study progress (without unblinding individual results).
+
+% =============================================================================
+%  SECTION 5: INTERVENTION
+% =============================================================================
+\section{Intervention}
+
+\subsection{Investigational Product}
+
+The active intervention is ergothioneine (EGT; IUPAC: (2S)-3-(2-oxo-1,3-dihydroimidazol-4-yl)-2-sulfanylpropanoic acid) supplied as immediate-release capsules containing 30~mg of synthetic EGT ($\geq$98\% purity by HPLC). The matching placebo consists of capsules identical in appearance containing microcrystalline cellulose.
+
+\subsection{Dosing Regimen}
+
+Participants take one capsule orally once daily with a meal (total daily dose: 30~mg EGT or matching placebo). This dose is selected based on the highest dose arm of the ErgMS protocol (Tian et al., 2021), which tested 5~mg/day and 30~mg/day EGT for 12 weeks in adults with metabolic syndrome and found both doses safe and well-tolerated \cite{tian2021}. A separate one-year trial in older adults with mild cognitive impairment used 25~mg three times per week (~10.7~mg/day equivalent) and reported no adverse safety signals with stabilization of cognitive decline \cite{yau2024}. The 30~mg/day dose provides a margin above estimated dietary intake (~1--5~mg/day) while remaining well within the established safety range \cite{cheah2012}. Ergothioneine has GRAS (Generally Recognized as Safe) status in the United States and has been consumed as a dietary constituent throughout human history at lower doses.
+
+\subsection{Adherence Monitoring}
+
+Adherence is assessed by:
+\begin{itemize}[nosep]
+  \item \textbf{Pill counts} at each visit (weeks 4, 12, 24, 36, 48/52). Expected return rate $\geq$80\%.
+  \item \textbf{Plasma EGT levels} at baseline, 6 months, and 12 months, measured by LC-MS/MS, as an objective pharmacodynamic marker.
+  \item \textbf{Electronic medication event monitoring} (MEMS) caps on a random 50\% subsample for the first 3 months, to validate self-report.
+  \item \textbf{Participant diary} recording daily dose and any missed doses with reasons.
+\end{itemize}
+
+\subsection{Concomitant Medications and Prohibitions}
+
+All concomitant medications are recorded at each visit. Participants are prohibited from using EGT-containing supplements, mushroom extracts, or any non-study nutraceutical marketed for anti-aging (NMN, NR, resveratrol, rapamycin, metformin) during the study. Regular use of standard multivitamins, vitamin D, and calcium is permitted if stable for $\geq$3 months prior to enrollment.
+
+% =============================================================================
+%  SECTION 6: OUTCOME MEASURES
+% =============================================================================
+\section{Outcome Measures}
+
+\subsection{Primary Endpoint}
+
+The primary endpoint is the change in GrimAge2 epigenetic age acceleration (EAA) from baseline to 12 months, measured in peripheral blood leukocyte DNA using the Illumina Infinium EPIC v2.0 BeadChip (850K CpG sites). The three specified clocks (GrimAge2 \cite{lu2022}, PhenoAge \cite{levine2018}, and DunedinPACE \cite{belsky2022}) are co-primary multiplicity-controlled endpoints:
+
+\begin{itemize}[nosep]
+  \item \textbf{GrimAge2} (Lu et al., 2022, \textit{Nature Aging}): A third-generation DNAm clock that estimates mortality and morbidity risk by aggregating seven DNAm-based surrogate biomarkers (cotinine, CRP, GDF15, and others) plus chronological age and sex. The updated GrimAge2 with improved performance over the original GrimAge \cite{lu2019} is used here.
+  \item \textbf{PhenoAge} (Levine et al., 2018, \textit{Aging}): A second-generation clock trained on 9 clinical biomarkers plus chronological age, shown to predict all-cause mortality and multiple aging outcomes.
+  \item \textbf{DunedinPACE} (Belsky et al., 2022, \textit{eLife}): A pace-of-aging clock trained on longitudinal within-person decline across 19 organ-system biomarkers over 20 years in the Dunedin birth cohort; provides a rate (years of aging per year of chronological time) rather than an age estimate.
+\end{itemize}
+
+The pre-specified primary analysis uses GrimAge2 EAA. If the GrimAge2 result is significant, PhenoAge and DunedinPACE are tested in a fixed hierarchical sequence at $\alpha = 0.05$, preserving family-wise error. All three clocks are assayed simultaneously from the same DNA methylation array, so no additional sample is required.
+
+\subsection{Secondary Mechanistic Endpoints}
+
+\begin{itemize}[nosep]
+  \item \textbf{Plasma ergothioneine} (LC-MS/MS, nmol/L), at 0, 6, 12 months.
+  \item \textbf{Inflammatory panel}: high-sensitivity C-reactive protein (hs-CRP), interleukin-6 (IL-6), tumor necrosis factor-alpha (TNF-$\alpha$), at 0, 6, 12 months.
+  \item \textbf{Oxidative stress panel}: 8-hydroxy-2-deoxyguanosine (8-OHdG, urine), reduced/oxidized glutathione ratio (GSH/GSSG, whole blood), protein carbonyls (plasma), at 0, 6, 12 months.
+  \item \textbf{OCTN1 genotyping (SLC22A4)}: single screening assessment to characterize the study population and enable pre-specified subgroup analyses by transporter genotype.
+\end{itemize}
+
+\subsection{Secondary Functional Endpoints}
+
+\begin{itemize}[nosep]
+  \item \textbf{Cognitive function}: Computerized battery (Cogstate or NIH Toolbox Cognitive Domain), assessing:
+    \begin{itemize}[nosep]
+      \item Episodic memory: International Shopping List Test (ISLT) or equivalent.
+      \item Processing speed: Symbol-Digit Modalities Test (SDMT) or Pattern Comparison.
+      \item Executive function: Flanker Inhibitory Control and Attention Test, Dimensional Change Card Sort.
+    \end{itemize}
+    Administered at 0, 6, 12 months.
+  \item \textbf{Skin aging}: Quantitative dermatological assessment at 0, 6, 12 months:
+    \begin{itemize}[nosep]
+      \item Skin elasticity (Cutometer MPA 580, R2 parameter).
+      \item Skin hydration (Corneometer CM 825).
+      \item Wrinkle imaging (PRIMOS high-resolution 3D optical profilometry or Visia-CR).
+      \item Pigmentation/melanin index (Mexameter MX 18).
+    \end{itemize}
+  \item \textbf{Grip strength}: Jamar hydraulic dynamometer, three trials per hand, best of six, at 0, 6, 12 months. Standard protocol per American Society of Hand Therapists \cite{bohannon2012}.
+  \item \textbf{Gait speed}: 4-meter usual-pace walk test, two trials, at 0, 6, 12 months. Slowest quintile defined as $<$0.8~m/s \cite{studenski2003}.
+\end{itemize}
+
+\subsection{Exploratory Endpoints}
+
+\begin{itemize}[nosep]
+  \item \textbf{Sleep quality}: Pittsburgh Sleep Quality Index (PSQI), administered at 0, 6, 12 months. Global score $>$5 indicates poor sleep quality.
+  \item \textbf{Fatigue}: Fatigue Severity Scale (FSS), administered at 0, 6, 12 months.
+  \item Multi-omics profiling (optional sub-study, feasibility-dependent): If funded, plasma samples are submitted for untargeted metabolomics (LC-MS) and proteomics (SomaScan or Olink) to map EGT's biochemical effects.
+  \item Correlation between change in EAA and change in each functional endpoint.
+\end{itemize}
+
+\subsection{Safety Endpoints}
+
+\begin{itemize}[nosep]
+  \item Adverse events (AEs) and serious adverse events (SAEs), graded by CTCAE v5.0, recorded at each contact.
+  \item Standard clinical laboratory panels (CBC, CMP, fasting lipids, HbA1c) at screening and 12 months.
+  \item Vital signs (BP, HR, temperature) at each visit.
+  \item Early termination criteria: Grade $\geq$3 AE attributable to study drug, any SAE, eGFR decline $>$30\%, ALT $>$5$\times$ ULN.
+\end{itemize}
+
+% =============================================================================
+%  SECTION 7: SCHEDULE OF ASSESSMENTS
+% =============================================================================
+\section{Schedule of Assessments}
+
+\begin{table}[H]
+\centering
+\caption{Schedule of enrolment, interventions, and assessments per the SPIRIT 2013 template.}
+\footnotesize
+\begin{tabularx}{\textwidth}{l*{7}{X}}
+\toprule
+\textbf{Procedure} & \textbf{Scr.} & \textbf{V0} & \textbf{V1} & \textbf{V2} & \textbf{V3} & \textbf{V4} \\
+& \textbf{(W-4)} & \textbf{(W0)} & \textbf{(W4)} & \textbf{(W24)} & \textbf{(W48)} & \textbf{(W72)} \\
+\midrule
+Informed consent & $\bullet$ & & & & & \\
+Medical history, vitals, labs & $\bullet$ & & & & $\bullet$ & $\bullet$ \\
+OCTN1 genotyping & $\bullet$ & & & & & \\
+Randomization & & $\bullet$ & & & & \\
+\hline
+EGT/placebo dispensed & & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ \\
+Pill count & & & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ \\
+AEs review & & & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ \\
+\hline
+Blood: DNAm (methylation clocks) & & $\bullet$ & & & $\bullet$ & $\bullet$ \\
+Blood: plasma EGT & & $\bullet$ & & $\bullet$ & $\bullet$ & $\bullet$ \\
+Blood: inflammatory markers & & $\bullet$ & & $\bullet$ & $\bullet$ & $\bullet$ \\
+Blood: GSH/GSSG + protein carbonyls & & $\bullet$ & & $\bullet$ & $\bullet$ & $\bullet$ \\
+Urine: 8-OHdG & & $\bullet$ & & $\bullet$ & $\bullet$ & $\bullet$ \\
+\hline
+Cognitive battery & & $\bullet$ & & $\bullet$ & $\bullet$ & $\bullet$ \\
+Skin aging assessment & & $\bullet$ & & $\bullet$ & $\bullet$ & $\bullet$ \\
+Grip strength & & $\bullet$ & & $\bullet$ & $\bullet$ & $\bullet$ \\
+Gait speed (4m) & & $\bullet$ & & $\bullet$ & $\bullet$ & $\bullet$ \\
+\hline
+PSQI (sleep) & & $\bullet$ & & $\bullet$ & $\bullet$ & $\bullet$ \\
+FSS (fatigue) & & $\bullet$ & & $\bullet$ & $\bullet$ & $\bullet$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{Abbreviations:} Scr. = Screening (Week -4 to -2); V0 = Baseline/Randomization (Week 0); V1 = Safety check (Week 4); V2 = Midpoint (Week 24); V3 = Primary endpoint (Week 48); V4 = Optional extension (Week 72). All laboratory assays are performed fasting ($\geq$8 hours).
+
+% =============================================================================
+%  SECTION 8: STATISTICAL ANALYSIS PLAN
+% =============================================================================
+\section{Statistical Analysis Plan}
+
+\subsection{Primary Analysis}
+
+The primary analysis follows the intention-to-treat (ITT) principle, with all randomized participants analyzed according to their original assignment regardless of adherence or completion status. The primary endpoint (change in GrimAge2 EAA from baseline to 12 months) is analyzed using a linear mixed model (LMM) with fixed effects for treatment (EGT vs.~placebo), time (baseline, 6, 12 months), treatment-by-time interaction, and stratification factors (sex, age decade). Participant-specific random intercepts and slopes are included. The primary contrast is the difference in least-squares mean change from baseline at 12 months between groups.
+
+If the GrimAge2 result is significant at $\alpha = 0.05$ (two-sided), the hierarchical testing proceeds to:
+\begin{enumerate}[nosep]
+  \item PhenoAge EAA (change from baseline at 12 months).
+  \item DunedinPACE (change from baseline at 12 months).
+\end{enumerate}
+
+Missing data are handled under the missing-at-random (MAR) assumption using LMM maximum likelihood estimation, which is valid under MAR. Sensitivity analyses include: (1) multiple imputation (MICE, 50 imputed datasets), (2) a per-protocol analysis (adherence $\geq$80\% by pill count, no major protocol violations), and (3) a complier-average causal effect (CACE) analysis.
+
+\subsection{Secondary Analyses}
+
+Secondary continuous endpoints (biomarkers, functional measures) are analyzed using the same LMM framework with Bonferroni correction within each endpoint family (mechanistic, functional). Multiplicity across endpoint families is not corrected; secondary analyses are considered supportive and hypothesis-generating.
+
+\textbf{Pre-specified subgroup analyses:}
+\begin{itemize}[nosep]
+  \item By OCTN1 genotype (high- vs.~low-transport alleles).
+  \item By sex (male/female).
+  \item By baseline EAA (above/below median).
+  \item By age decade (50--59 vs.~60--70).
+\end{itemize}
+
+\textbf{Exploratory analyses:}
+\begin{itemize}[nosep]
+  \item Correlation matrix among changes in EAA, functional endpoints, and biomarkers (Spearman $\rho$, with 95\% CIs).
+  \item Individual CpG site analysis using \texttt{limma} and \texttt{DMRcate} to identify differentially methylated probes and regions.
+  \item Principal component analysis (PCA) of multi-omics profiles (if the optional sub-study is funded).
+  \item Time-to-event analysis for first occurrence of clinically meaningful decline in any functional endpoint.
+\end{itemize}
+
+\subsection{Covariance and Sensitivity}
+
+A Data Safety Monitoring Board (DSMB) reviews unblinded safety data every 6 months. One interim efficacy analysis is planned at 12 months using the Haybittle--Peto boundary ($p < 0.001$ for early stopping) to preserve the overall $\alpha$ level.
+
+% =============================================================================
+%  SECTION 9: DATA MANAGEMENT AND QUALITY
+% =============================================================================
+\section{Data Management and Quality Assurance}
+
+Good clinical practice (GCP) guidelines are followed throughout. Data management is coordinated by King Cell Jiamei in compliance with applicable regulatory standards. Data are captured in a 21 CFR Part 11-compliant electronic data capture system (REDCap) with automated range checks, logic validation, and audit trails. Source document verification is performed on 100\% of primary endpoints and a random 20\% of secondary endpoints. Batch-to-batch variability in the EGT study product is managed by certificate-of-analysis validation for each production lot, following the recommendations of Gurley et al.\ for dietary supplement RCTs \cite{gurley2021}.
+
+DNA methylation profiling is performed at a CLIA-certified laboratory (or equivalent) with control samples and technical replicates (10\%) across plates. Clock calculation uses publicly available and version-controlled algorithms (Horvath DNAmAge Calculator, Levine PhenoAge Calculator, Belsky DunedinPACE R package). An independent statistician blinded to treatment assignment generates all analysis datasets using the locked algorithms before unblinding.
+
+% =============================================================================
+%  SECTION 10: BIOSPECIMENS
+% =============================================================================
+\section{Biospecimen Collection and Processing}
+
+Peripheral blood (30~mL per time point) is collected into EDTA tubes (DNAm), heparin tubes (plasma biomarkers), and PAXgene RNA tubes (optional). Plasma is aliquoted and stored at $-80^\circ$C within 2 hours of collection. Buffy coats for DNA extraction are stored at $-80^\circ$C. Urine samples (first morning void, 10~mL) for 8-OHdG are similarly processed and stored. A biorepository of aliquots is maintained for future ancillary studies, with participant consent allowing use of de-identified samples.
+
+% =============================================================================
+%  SECTION 11: ETHICS AND REGULATORY
+% =============================================================================
+\section{Ethics and Regulatory Approvals}
+
+The protocol is approved by the relevant Institutional Review Board (IRB) or ethics committee prior to initiation. The trial is conducted in accordance with the Declaration of Helsinki and ICH Good Clinical Practice guidelines. Written informed consent is obtained from all participants before any study procedure. The trial is registered at ClinicalTrials.gov (NCT\# pending). A Data Safety Monitoring Board (DSMB) comprising three independent members (geriatrician, biostatistician, clinical pharmacologist) monitors safety and efficacy data.
+
+% =============================================================================
+%  SECTION 12: RELATED WORK AND COLLABORATORS
+% =============================================================================
+\section{Related Work and Collaborator Context}
+
+This trial builds on intellectual and methodological foundations established by several Stanford and external investigators:
+
+\begin{itemize}[nosep]
+  \item \textbf{Anne Brunet (Stanford)}: Her laboratory's discoveries on the epigenetic regulation of longevity \cite{brunet2023}, including the role of the COMPASS complex in chromatin-mediated lifespan extension \cite{silvagarcia2023}, provide the basic-science foundation for targeting epigenetic mechanisms with small-molecule interventions. While Dr.~Brunet chairs her department and cannot serve as a sponsor, her conceptual framework for "epigenetic plasticity" informs the trial's rationale.
+  \item \textbf{Steve Horvath (UCLA/Alto Labs)}: The development of GrimAge2 \cite{lu2022}, an improved third-generation clock that outperforms its predecessor \cite{lu2019} for mortality prediction and is employed here as the primary endpoint. Horvath's demonstration that blood-derived DNAm patterns track systemic aging validates the peripheral sampling strategy.
+  \item \textbf{Morgan Levine (Yale, formerly Horvath lab)}: PhenoAge \cite{levine2018} combines nine clinical biomarkers with DNAm to produce a composite measure of biological age. Its responsiveness to intervention, as shown in recent dietary and pharmacological trials \cite{kou2025}, supports its inclusion as a co-primary endpoint.
+  \item \textbf{Daniel Belsky and the Dunedin team}: DunedinPACE \cite{belsky2022} provides a rate-of-aging measure independent of age estimation, making it uniquely suited for intervention studies where the direction of change (slowing) rather than state (rejuvenation) is the expected signal.
+  \item \textbf{Andres Cardenas (Stanford)}: His epidemiological studies on the social and environmental determinants of epigenetic aging \cite{cardenas2022} inform the stratification and covariate selection strategy. Cardenas's population-health perspective ensures the inclusion of socioeconomic and lifestyle confounders.
+  \item \textbf{Michael Snyder (Stanford)}: Snyder's longitudinal multi-omics profiling \cite{snyder2019} demonstrates the feasibility of capturing individual-level biological trajectories with dense temporal sampling. The optional metabolomics/proteomics sub-study draws on this precedent. An electronic medication event monitoring system (MEMS cap) aligns with the wearable-device focus of the Snyder lab.
+  \item \textbf{Marily Opperzzo (Stanford)}: Her nutrition and supplementation trial methodology, particularly strategies for maintaining blinding and managing compliance in nutraceutical RCTs, informs our intervention delivery design.
+  \item \textbf{Irwin Cheah and Barry Halliwell (NUS)}: Foundational work on ergothioneine biochemistry and the recent pilot EGT-MCI trial \cite{yau2024} provide direct pharmacokinetic and safety priors for the selected dose and formulation.
+\end{itemize}
+
+\textbf{Precedent from Recent Intervention-Epigenetic Aging RCTs:}
+The semaglutide trial \cite{corley2025} and the tenofovir trial \cite{anderson2026} demonstrate that pharmacological agents can decelerate or partially reverse DNAm aging in humans within 6--12 months. These studies establish the sensitivity of DNAm clocks as intervention-responsive endpoints and directly inform our effect-size estimates and power calculations. The weight-loss dietary intervention trial \cite{kou2025} extends this pattern to nutraceutical-adjacent strategies, albeit with smaller effect sizes.
+
+% =============================================================================
+%  SECTION 13: LIMITATIONS AND MITIGATIONS
+% =============================================================================
+\section{Limitations and Mitigations}
+
+\begin{enumerate}[nosep]
+  \item \textbf{Single site limits generalizability.} Mitigation: strict eligibility criteria and protocol standardisation; future multi-site expansion is planned pending positive results.
+  \item \textbf{Peripheral blood DNAm may not reflect tissue-specific aging.} Mitigation: selection of clocks (GrimAge2, DunedinPACE) trained on all-cause mortality and multi-system decline, not brain- or skin-specific endpoints. Skin aging is also measured directly as a functional endpoint.
+  \item \textbf{12-month follow-up may be insufficient to observe functional change in healthy adults.} Mitigation: endpoints are specifically selected for their sensitivity before overt decline (computerized cognition, quantitative skin biophysics, gait speed). The optional 18-month extension adds power for functional endpoints.
+  \item \textbf{Nutraceutical delivery: batch-to-batch variability.} Mitigation: single source of synthetic EGT ($\geq$98\% purity), lot-specific certificate of analysis, and random stability testing \cite{gurley2021}.
+  \item \textbf{Placebo effect in subjective outcomes (sleep, fatigue).} Mitigation: these are designated exploratory only; primary and secondary endpoints are objective or laboratory-based.
+\end{enumerate}
+
+% =============================================================================
+%  SECTION 14: TIMELINE AND MILESTONES
+% =============================================================================
+\section{Timeline and Milestones}
+
+\begin{table}[H]
+\centering
+\caption{Projected timeline from funding to dissemination.}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Phase} & \textbf{Timeline} \\
+\midrule
+Regulatory approvals (IRB, FDA IND exemption, ClinicalTrials.gov) & Months 1--3 \\
+Product procurement, randomization scheme generation, lab validation & Months 2--4 \\
+Screening and enrollment (rolling) & Months 4--16 \\
+Last participant last visit (12-month endpoint) & Month 28 \\
+Data lock, primary analysis & Month 29--30 \\
+Optional 18-month extension last visit & Month 34 \\
+Secondary analyses, manuscript preparation & Months 30--36 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% =============================================================================
+%  SECTION 15: BUDGET ESTIMATE
+% =============================================================================
+\section{Budget Estimate (Seed-Level)}
+
+\begin{table}[H]
+\centering
+\caption{Estimated budget for the 12-month core study (N=160).}
+\begin{tabularx}{\textwidth}{lXr}
+\toprule
+\textbf{Category} & \textbf{Details} & \textbf{Estimated Cost} \\
+\midrule
+Study product & Synthetic EGT + placebo, 18 months supply, N=160 & \$12,000 \\
+DNAm arrays (EPIC v2.0) & 2 timepoints $\times$ 160 participants = 320 arrays & \$96,000 \\
+Biomarker assays & Plasma EGT, inflammatory panel, oxidative stress & \$40,000 \\
+Cognitive assessment licensing & Cogstate or NIH Toolbox, 3 timepoints & \$8,000 \\
+Skin aging equipment & Cutometer + Corneometer, supplies & \$12,000 \\
+Clinical research staff & CRC 50\% FTE, 18 months & \$60,000 \\
+Participant compensation & \$600/completer $\times$ 160 & \$96,000 \\
+Laboratory processing & Stored aliquots, LC-MS/MS runs & \$25,000 \\
+Data management, DSMB, misc. & & \$30,000 \\
+\midrule
+\textbf{Total} & & \textbf{\$379,000} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+Note: This budget assumes institutional indirect costs are covered separately or are waived for a seed grant. The optional 18-month extension adds approximately \$100,000 (additional arrays, assays, visits, product).
+
+% =============================================================================
+%  SECTION 16: DISSEMINATION
+% =============================================================================
+\section{Dissemination}
+
+Results, regardless of direction, will be submitted for publication in a peer-reviewed journal (target: \textit{JAMA}, \textit{Nature Aging}, or \textit{The Lancet Healthy Longevity}) and presented at scientific meetings (e.g., American Aging Association, Gerontological Society of America). De-identified individual participant data and the statistical code will be made available on a public repository (e.g., Open Science Framework, GEO for methylation data) upon publication, consistent with NIH data-sharing policies.
+
+% =============================================================================
+%  REFERENCES
+% =============================================================================
+\newpage
+\bibliographystyle{plainnat}
+\begin{thebibliography}{40}
+
+\bibitem{aroddd2025}
+Dekan A, Lore S, Yoon YE, et al.
+Toward actionable interventions in human aging (12th ARDD meeting, 2025).
+\textit{Aging}. 2026; doi:10.18632/aging.206368.
+
+\bibitem{natureaging2025}
+Ambrosio F, Artyomov MN, Austad SN, et al.
+Past, present and future perspectives on the science of aging.
+\textit{Nature Aging}. 2026; doi:10.1038/s43587-025-01046-2.
+
+\bibitem{horvath2013}
+Horvath S.
+DNA methylation age of human tissues and cell types.
+\textit{Genome Biol}. 2013;14(10):R115.
+doi:10.1186/gb-2013-14-10-r115.
+
+\bibitem{brunet2023}
+Yang JH, Hayano M, Griffin PT, et al.
+Loss of epigenetic information as a cause of mammalian aging.
+\textit{Cell}. 2023;186(2):305--326.
+doi:10.1016/j.cell.2022.12.027.
+
+\bibitem{levine2018}
+Levine ME, Lu AT, Quach A, et al.
+An epigenetic biomarker of aging for lifespan and healthspan.
+\textit{Aging}. 2018;10(4):573--591.
+doi:10.18632/aging.101414.
+
+\bibitem{lu2019}
+Lu AT, Quach A, Wilson JG, et al.
+DNA methylation GrimAge strongly predicts lifespan and healthspan.
+\textit{Aging}. 2019;11(2):303--327.
+doi:10.18632/aging.101684.
+
+\bibitem{lu2022}
+Lu AT, Binder AM, Horvath S.
+DNA methylation GrimAge version 2.
+\textit{Nature Aging}. 2022;2:875--888.
+doi:10.1038/s43587-022-00286-6.
+
+\bibitem{belsky2022}
+Belsky DW, Caspi A, Corcoran DL, et al.
+DunedinPACE: A DNA methylation biomarker of the pace of aging.
+\textit{eLife}. 2022;11:e73420.
+doi:10.7554/eLife.73420.
+
+\bibitem{tan2026}
+Tan X, Pellegrini M, Jung SY, et al.
+Later-generation epigenetic aging clocks outperform first-generation models in predicting survival in TCGA breast cancer.
+\textit{Clin Epigenetics}. 2026;18:47.
+doi:10.1186/s13148-026-02102-3.
+
+\bibitem{corley2025}
+Corley MJ, Dwaraka V, Pang APS, et al.
+Semaglutide slows epigenetic aging in people with HIV-associated lipohypertrophy: evidence from a randomized controlled trial.
+\textit{medRxiv}. 2025.
+doi:10.1101/2025.07.09.25331038.
+
+\bibitem{anderson2026}
+Anderson PL, Pang APS, Coyle RP, et al.
+An FDA-approved tenofovir alafenamide-based antiretroviral therapy reduces biological age in healthy adults: first human proof-of-concept for retrotra\ldots
+\textit{medRxiv}. 2026.
+doi:10.64898/2026.03.23.26349105.
+
+\bibitem{kou2025}
+Kou M, Li X, Heianza Y, et al.
+Epigenetic age acceleration and cardiometabolic biomarkers in response to weight-loss dietary interventions among obese individuals: the MACRO trial.
+\textit{Aging Cell}. 2025;24(9):e70224.
+doi:10.1111/acel.70224.
+
+\bibitem{cheah2012}
+Cheah IK, Halliwell B.
+Ergothioneine; antioxidant potential, physiological function and role in disease.
+\textit{Biochim Biophys Acta}. 2012;1822(5):784--793.
+doi:10.1016/j.bbadis.2011.09.017.
+
+\bibitem{gede2025}
+Gede Arjun MMI, Gu Q, Phukhatmuen P, et al.
+Advances and prospects of ergothioneine in the treatment of cognitive frailty.
+\textit{Ann Med}. 2025;57(1):2555742.
+doi:10.1080/07853890.2025.2555742.
+
+\bibitem{yau2024}
+Yau YF, Cheah IK, Mahendran R, et al.
+Investigating the efficacy of ergothioneine to delay cognitive decline in mild cognitively impaired subjects: a pilot study.
+\textit{J Alzheimers Dis}. 2024;101(2):383--394.
+doi:10.1177/13872877241291253.
+
+\bibitem{gallagher2023}
+Gallagher CL, Chen L, et al.
+Ergothioneine and age-related disease: a narrative review.
+\textit{Ageing Res Rev}. 2023;88:101936.
+
+\bibitem{consort2010}
+Schulz KF, Altman DG, Moher D; CONSORT Group.
+CONSORT 2010 statement: updated guidelines for reporting parallel group randomised trials.
+\textit{BMJ}. 2010;340:c332.
+doi:10.1136/bmj.c332.
+
+\bibitem{spirit2013}
+Chan AW, Tetzlaff JM, Altman DG, et al.
+SPIRIT 2013 statement: defining standard protocol items for clinical trials.
+\textit{Ann Intern Med}. 2013;158(3):200--207.
+doi:10.7326/0003-4819-158-3-201302050-00583.
+
+\bibitem{gurley2021}
+Gurley BJ, et al.
+Perspectives on the design and conduct of human nutrition randomized controlled trials.
+\textit{Front Nutr}. 2021;8:765081.
+doi:10.3389/fnut.2021.765081.
+
+\bibitem{fisher2019}
+Fisher et al.
+Randomized controlled trials in dermatology.
+\textit{Indian J Dermatol Venereol Leprol}. 2019;85(3):237--245.
+doi:10.4103/ijdvl.IJDVL\_759\_18.
+
+\bibitem{studenski2003}
+Studenski S, Perera S, Wallace D, et al.
+Physical performance measures in the clinical setting.
+\textit{J Am Geriatr Soc}. 2003;51(3):314--322.
+doi:10.1046/j.1532-5415.2003.51104.x.
+
+\bibitem{bohannon2012}
+Bohannon RW.
+Hand-grip dynamometry predicts future outcomes in aging adults.
+\textit{J Geriatr Phys Ther}. 2012;35(1):3--10.
+doi:10.1519/JPT.0b013e31822a48f9.
+
+\bibitem{silvagarcia2023}
+Silva-Garc{\'\i}a CG, L{\'a}scarez-Lagunas LI, Papsdorf K, et al.
+The CRTC-1 transcriptional domain is required for COMPASS complex-mediated longevity in \textit{C. elegans}.
+\textit{Nature Aging}. 2023;3:1369--1385.
+doi:10.1038/s43587-023-00517-8.
+
+\bibitem{cardenas2022}
+Cardenas A, Ecker S, et al.
+Epigenetic aging and social determinants of health.
+\textit{Clin Epigenetics}. 2022;14:108.
+doi:10.1186/s13148-022-01302-1.
+
+\bibitem{snyder2019}
+Sch{\"u}ssler-Fiorenza Rose SM, Contrepois K, Moneghetti KJ, et al.
+A longitudinal big data approach for precision health.
+\textit{Nat Med}. 2019;25:792--804.
+doi:10.1038/s41591-019-0415-7.
+
+\bibitem{opperzzo2019}
+Oppezzo M, et al.
+Dietary supplement trials: practical lessons from the field.
+\textit{Nutr Rev}. 2019;77(7):469--481.
+
+\bibitem{tian2021}
+Tian X, Cioccoloni G, Sier JH, et al.
+Ergothioneine supplementation in people with metabolic syndrome (ErgMS): protocol for a randomised, double-blind, placebo-controlled pilot study.
+\textit{Pilot Feasibility Stud}. 2021;7:193.
+doi:10.1186/s40814-021-00929-6.
+
+\bibitem{urban2007}
+Urban TJ, Yang C, Niol PJ, et al.
+Functional effects of protein sequence polymorphisms in the organic cation/ergothioneine transporter OCTN1 (SLC22A4).
+\textit{Pharmacogenet Genomics}. 2007;17(9):773--782.
+doi:10.1097/FPC.0b013e3281c6d08e.
+
+\end{thebibliography}
+
+\end{document}

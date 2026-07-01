@@ -1,0 +1,25 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.lof
+*.lot
+*.bcf
+*.run.xml
+
+# Compiled protocol PDF (regenerable from .tex)
+EGT_RCT_Protocol.pdf
+
+# macOS
+.DS_Store
+
+# Editor swap files
+*.swp
+*.swo
+*~
