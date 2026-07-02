@@ -28,13 +28,27 @@ He suggested **Neurotrack** as the cognitive assessment platform — a digital, 
 
 **Action:** What comparator? This needs discussion — metformin? NMN? Another nutraceutical? The choice changes cost, N, and framing.
 
-### 6. "Add more mimic prospro study"
-**Unclear.** Possible interpretations (in priority order):
-- **PROSPER** — the well-known geriatric trial (PROspective Study of Pravastatin in the Elderly). He may want the design to mirror this classic geriatric RCT format.
-- An in-flight / unpublished study name that the note garbled
-- Could refer to a study Snyder is involved with that uses a prospective + proteomics design
+### 6. "Add more mimic PROSPER study" (confirmed as PROSPER)
 
-**Action:** Clarify with Snyder — "could you expand on the prospro study reference?"
+**PROSPER** = **PRO**spective **S**tudy of **P**ravastatin in the **E**lderly at **R**isk
+(Shepherd et al., Lancet 2002. N=5,804, age 70-82, 3.2 years follow-up)
+
+A landmark geriatric RCT that set the standard for multi-domain endpoint design in older adults.
+
+**Design elements Snyder likely wants mimicked:**
+
+| PROSPER Feature | Our Study Equivalent |
+|----------------|---------------------|
+| **Composite primary endpoint** (coronary death + non-fatal MI + stroke) | Multiple clocks as co-primary, hierarchical gatekeeping. Same logic — a composite tells you more than any single measure |
+| **Cognitive battery as a secondary endpoint** (Stroop, Letter-Digit Coding, Picture-Word Learning) | Already have cognitive battery — align with PROSPER's approach of using multiple domain-specific tests, not one global score |
+| **Functional endpoints alongside biomarkers** (disability index) | Grip strength, gait speed, skin aging — map to PROSPER's functional outcome model |
+| **Well-characterized at-risk population** (not just "healthy") | Consider widening from "healthy" to "with risk factors for accelerated aging" — enriches the signal |
+| **Pre-specified subgroup analyses** (age, sex, baseline risk) | Already have OCTN1 genotype, sex, age decade subgroups — align with PROSPER's clarity |
+| **Composite reporting** that tests both benefit and harm (cancer signal) | Include safety reporting framework that tracks AEs comprehensively |
+
+**Key insight from PROSPER:** Pravastatin hit the primary composite endpoint (HR 0.85) but had *no effect on cognition or disability.* This is informative — a drug can reduce cardiovascular events without touching functional aging. Our study asks whether EGT does the inverse (slows biological aging) — and the PROSPER model validates including both primary (clock) and secondary (function) endpoints so we learn which domains respond.
+
+**Action:** Snyder wants more structured, PROSPER-like endpoint hierarchy and composite reporting. Update the protocol's endpoint section to reflect multi-domain composite logic with clearer pre-specified analyses.
 
 ### 7. Can Run Cytokine Assay
 He's offering his lab's **cytokine assay platform** for the inflammatory markers (IL-6, TNF-α, hs-CRP). This saves the assay cost in the budget.
