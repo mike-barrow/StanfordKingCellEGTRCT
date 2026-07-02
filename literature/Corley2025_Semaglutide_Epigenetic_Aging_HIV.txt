@@ -1,0 +1,87 @@
+======================================================================
+Corley MJ, Dwaraka V, Pang APS, Labbato D, Smith R, Eckard AR, McComsey GA.
+Semaglutide Slows Epigenetic Aging in People with HIV-associated lipohypertrophy:
+Evidence from a Randomized Controlled Trial.
+medRxiv. 2025 Jul 14. doi: 10.1101/2025.07.09.25331038
+PMID: 40791720 | PMC: PMC12338914
+======================================================================
+
+VERIFIED DATA FROM PAPER
+========================
+
+1. TRIAL DURATION: 32 weeks (CONFIRMED)
+   - "post-hoc epigenetic analysis of a 32-week, double-blind, placebo-controlled
+     phase 2b trial"
+   - "Using paired peripheral-blood methylomes collected at baseline and 32 weeks"
+   - 8-week dose titration + 24 weeks at 1.0 mg = 32 weeks total
+
+2. NUMBER OF PARTICIPANTS:
+   - 108 randomized (54 semaglutide, 54 placebo)
+   - 8 participants (15%) withdrew from each group
+   - 92 completed longitudinal assessments
+   - EPIGENETIC ANALYSIS: 84 total (45 semaglutide, 39 placebo)
+     (biobanked PBMC samples available at both timepoints)
+
+3. EFFECT SIZES FOR EPIGENETIC CLOCKS (adjusted for sex, BMI, hsCRP, sCD163):
+   Clock                    Effect Size    P-value
+   ----------------------  -------------  --------
+   PCGrimAge               -3.1 years     P = 0.007
+   GrimAge V1              -1.4 years     P = 0.02
+   GrimAge V2              -2.3 years     P = 0.009
+   PhenoAge                -4.9 years     P = 0.004
+   DunedinPACE             -0.09 units    P = 0.01
+                            (~9% slower pace)
+   OMICmAge                -2.2 years     P = 0.009
+   RetroAge                -2.2 years     P = 0.030
+   Intrinsic Capacity      unchanged      P = 0.31
+   
+   Eleven organ-system clocks showed concordant decreased aging with
+   semaglutide, most prominently inflammation, brain, and heart.
+
+4. SEMAGLUTIDE MECHANISM OF ACTION (as stated in paper):
+   - "Semaglutide is a once-weekly GLP-1 receptor agonist"
+   - "Semaglutide, a once-weekly glucagon-like peptide-1 (GLP-1) receptor
+     agonist, has emerged as a transformative therapeutic for its marked weight
+     reduction and cardiometabolic benefits, including reductions in visceral
+     adipose tissue"
+   - "The trial aimed to evaluate the effects of the GLP-1 receptor agonist
+     semaglutide on adipose tissue quantity and distribution"
+   - Described as "a candidate gerotherapeutic" - proposed to slow biological
+     aging through its metabolic and anti-inflammatory effects
+   - No specific text about glycemic control in this epigenetic analysis, but
+     the parent trial (Eckard et al. 2024, Lancet Diabetes Endocrinol) excluded
+     participants with diabetes; baseline glycemic control was normal
+     (median HbA1c 5.5%)
+
+5. STUDY POPULATION:
+   - Adults with HIV-1, stable ART >=12 weeks, HIV-1 RNA <400 copies/mL
+   - BMI >=25 kg/m2, with lipohypertrophy
+   - No type 1/2 diabetes or cardiovascular disease
+   - Mean age: 49 +/- 12 years
+   - 42% women, 58% Black, 38% White
+   - Median BMI: 32.9 kg/m2
+   - Median HbA1c: 5.5%
+   - Median HOMA-IR: 2.9
+
+6. KEY FINDING (abstract):
+   "These findings provide, to our knowledge, the first clinical-trial evidence
+   that semaglutide modulates validated epigenetic biomarkers of aging, justifying
+   further evaluation of GLP-1 receptor agonists for health-span extension."
+
+7. UPDATE NOTE:
+   A peer-reviewed version has been published in Nature Communications
+   (2026 May 19, PMID: 42156721, doi: 10.1038/s41467-026-72861-3).
+
+======================================================================
+FILES STORED:
+- /home/king/Documents/StanfordKingCellEGTRCT/Corley2025_Semaglutide_Epigenetic_Aging_HIV.xml
+  (full text XML from Europe PMC, 107 KB)
+- /home/king/Documents/StanfordKingCellEGTRCT/Corley2025_Semaglutide_Epigenetic_Aging_HIV.txt
+  (this summary file)
+
+NOTE: The PDF could NOT be downloaded from this server environment due
+to Cloudflare/reCAPTCHA blocks on both PMC and medRxiv. The full text XML
+(containing all article sections) was obtained via Europe PMC API and
+is saved as the XML file above. Open the PMC page in a browser to
+download the PDF directly.
+======================================================================

@@ -57,3 +57,40 @@ Email draft needs:
 - Replace vague clock SD claims with verified DunedinPACE ICC = 0.96 data
 - Note that the Zhao & Qi 2026 and D'Onofrio 2016 PDFs are available
 - Drop Corley as a reference in the email (keep or drop from protocol)
+
+NEW LITERATURE ADDED (Jul 2026)
+===============================
+
+Added for Snyder call preparation:
+
+7. ricceri_2014_seasonal_methylation.pdf - VERIFIED (open access PLoS ONE, 6 pages)
+   Seasonal methylation drift: LINE-1 ~0.8% difference between spring/summer vs
+   autumn/winter (p=0.04). Supports 12-month study duration rationale (controls for
+   seasonal cycle).
+
+8. waterland_2010_seasonal_methylation_gambia.pdf - VERIFIED (open access PLoS Genetics, 10 pages)
+   Season of conception affects human methylome at metastable epialleles.
+   Foundational evidence that seasonal environment shapes DNA methylation.
+
+9. Corley2025_Semaglutide_Epigenetic_Aging_HIV.xml - VERIFIED (full text, 107KB)
+   FULL TEXT download via Europe PMC API. Trial: 32 weeks, double-blind, placebo-
+   controlled. N=84 epigenetic analysis (45 semaglutide, 39 placebo).
+
+   Key effect sizes (adjusted):
+   - GrimAge2: -2.3yr (p=0.009) | PhenoAge: -4.9yr (p=0.004)
+   - DunedinPACE: -0.09 units (p=0.01) | PCGrimAge: -3.1yr (p=0.007)
+   - 11 organ-system clocks showed concordant decreased aging
+
+   Population: HIV+ adults, median HbA1c 5.5% (non-diabetic), BMI 32.9
+   Mechanism: GLP-1 receptor agonist, metabolic/cardiometabolic benefits
+   NOTE: The PDF was blocked by Cloudflare; full text XML was obtained instead.
+   Peer-reviewed version published in Nature Communications 2026 (PMID 42156721).
+
+10. cognitive_decline_12month_justification.md - VERIFIED ABSTRACTS (not PDF)
+    Summary of key papers (Salthouse 2009, Weintraub 2014, Heaton 2014, Lim 2013)
+    supporting that computerized batteries detect decline in 50-70yo over 12 months.
+    Rate: ~0.02-0.08 SD/year for processing speed and memory.
+
+11. glp1_glucose_aging_background.md - SYNTHESIS NOTE
+    Explains why semaglutide (GLP-1 agonist) results are relevant to the glycemic
+    control / epigenetic aging connection. Written for Snyder call prep.
