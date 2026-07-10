@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ergothioneine &amp; Epigenetic Aging — RCT Proposal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .reveal { font-family: 'Inter', sans-serif; }
+    .reveal h1 { font-weight: 700; font-size: 2.8em; letter-spacing: -0.02em; }
+    .reveal h2 { font-weight: 600; font-size: 1.6em; letter-spacing: -0.01em; color: #a8e6a3; margin-bottom: 0.15em; }
+    .reveal h3 { font-weight: 600; font-size: 1.1em; color: #7ec8e3; }
+    .reveal p, .reveal li { font-weight: 300; font-size: 0.75em; line-height: 1.5; }
+    .reveal .subtitle { color: #999; font-size: 0.5em; margin-top: -0.3em; }
+    .reveal .highlight { color: #f0c040; font-weight: 600; }
+    .reveal .accent { color: #a8e6a3; }
+    .reveal .two-col { display: flex; gap: 1.5em; justify-content: center; align-items: flex-start; margin-top: 0.3em; }
+    .reveal .two-col > div { flex: 1; }
+
+    /* Timeline bar chart */
+    .bar-chart { display: flex; align-items: flex-end; gap: 2px; height: 180px; padding: 0 8px; margin: 3px 0; }
+    .bar { flex: 1; min-width: 6px; background: linear-gradient(to top, #2a7a5a, #4ac99a); border-radius: 2px 2px 0 0; position: relative; }
+    .bar-label { position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%); font-size: 0.4em; color: #777; white-space: nowrap; }
+    .chart-container { position: relative; }
+
+    /* Epoch bands */
+    .epoch-band { display: flex; width: 100%; height: 24px; border-radius: 3px; overflow: hidden; margin-bottom: 2px; }
+    .epoch-segment { display: flex; align-items: center; justify-content: center; font-size: 0.45em; font-weight: 600; color: #111; }
+    .epoch-obs { background: #8b7355; flex: 1; min-width: 0; }
+    .epoch-disc { background: #5a6a7a; flex: 2; min-width: 0; }
+    .epoch-flash { background: #c09840; flex: 2; min-width: 0; }
+    .epoch-curr { background: #2a7a5a; flex: 5; min-width: 0; }
+
+    /* Taxonomy */
+    .taxonomy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 12px auto; max-width: 80%; }
+    .taxonomy-card { background: #1a1a2e; border: 1px solid #333; border-radius: 6px; padding: 8px 6px; position: relative; }
+    .taxonomy-card .domain-name { font-weight: 600; font-size: 0.65em; color: #7ec8e3; }
+    .taxonomy-card.our-gap { border-color: #f0c040; background: #2a2a1e; }
+    .taxonomy-card.our-gap .domain-name { color: #f0c040; font-size: 0.75em; }
+    .taxonomy-card .badge { position: absolute; top: -5px; right: -5px; background: #f0c040; color: #111; font-size: 0.4em; padding: 1px 5px; border-radius: 6px; font-weight: 700; }
+
+    /* Outcome cards */
+    .outcome-card { background: #1a1a2e; border-left: 3px solid #a8e6a3; padding: 0.4em 0.6em; margin-bottom: 0.3em; }
+    .outcome-card .stat { font-size: 1.2em; font-weight: 700; color: #f0c040; }
+    .outcome-card .desc { font-size: 0.6em; color: #ccc; }
+
+    /* Table */
+    .reveal .table-inline { font-size: 0.55em; width: 95%; margin: 0.3em auto; border-collapse: collapse; }
+    .reveal .table-inline th { background: #1a3a2a; padding: 0.3em 0.5em; font-weight: 600; font-size: 0.9em; }
+    .reveal .table-inline td { padding: 0.25em 0.5em; border-bottom: 1px solid #333; }
+
+    .footer-note { font-size: 0.4em; color: #555; margin-top: 0.3em; }
+  </style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- SLIDE 1 — TITLE -->
+<section>
+  <h1>Ergothioneine &amp;<br>Epigenetic Aging</h1>
+  <p style="font-size:0.55em; color:#aaa; margin-top:1em;">A Double-Blind, Placebo-Controlled RCT in Healthy Adults Aged 50–70</p>
+  <p style="font-size:0.4em; color:#666; margin-top:1.5em;">Michael Barrow — Stanford University / King Cell Jiamei</p>
+</section>
+
+<!-- SLIDE 2 — WHAT IS EGT -->
+<section>
+  <h2>What Is Ergothioneine?</h2>
+  <div class="two-col" style="margin-top:0.2em;">
+    <div style="text-align:left;">
+      <ul style="font-size:0.85em;">
+        <li><strong>Essential Amino Acid</strong></li>
+        <li><strong>GRAS</strong> — safe, no known toxicity</li>
+        <li><strong>Antioxidant</strong> — but not like the others</li>
+        <li><strong>Highly stable</strong> — thione form resists autoxidation</li>
+        <li><strong>Dedicated active transporter</strong> (OCTN1)</li>
+        <li><strong>Capable of crossing BBB</strong></li>
+      </ul>
+    </div>
+    <div style="text-align:center;">
+      <svg viewBox="0 0 280 220" width="260" height="200" style="background:#0d0d1a; border-radius:8px;">
+        <!-- Imidazole-2-thione ring -->
+        <!-- Ring: N1-C2(=S)-N3-C4=C5 -->
+        <text x="140" y="22" text-anchor="middle" fill="#888" font-size="10" font-family="Inter">C₉H₁₅N₃O₂S</text>
+        <!-- Thione sulfur -->
+        <text x="228" y="72" text-anchor="middle" fill="#f0c040" font-size="12" font-family="Inter" font-weight="700">S</text>
+        <!-- Sulfur double bond line -->
+        <line x1="200" y1="60" x2="218" y2="66" stroke="#f0c040" stroke-width="2.5"/>
+        <line x1="200" y1="55" x2="218" y2="61" stroke="#f0c040" stroke-width="1.5"/>
+        <!-- Ring bonds -->
+        <line x1="200" y1="50" x2="185" y2="35" stroke="#a8e6a3" stroke-width="2"/>
+        <line x1="185" y1="35" x2="160" y2="35" stroke="#a8e6a3" stroke-width="2"/>
+        <line x1="160" y1="35" x2="145" y2="50" stroke="#a8e6a3" stroke-width="2"/>
+        <line x1="145" y1="50" x2="160" y2="65" stroke="#a8e6a3" stroke-width="2"/>
+        <line x1="160" y1="65" x2="185" y2="65" stroke="#a8e6a3" stroke-width="2"/>
+        <line x1="185" y1="65" x2="200" y2="50" stroke="#a8e6a3" stroke-width="1.5"/>
+        <!-- Ring = inside -->
+        <line x1="180" y1="52" x2="165" y2="42" stroke="#a8e6a3" stroke-width="1" opacity="0.5"/>
+        <!-- N labels -->
+        <text x="183" y="32" text-anchor="middle" fill="#7ec8e3" font-size="11" font-family="Inter">N</text>
+        <text x="140" y="52" text-anchor="middle" fill="#7ec8e3" font-size="11" font-family="Inter">N</text>
+        <!-- Side chain from C4 -->
+        <line x1="160" y1="65" x2="155" y2="95" stroke="#a8e6a3" stroke-width="2"/>
+        <line x1="155" y1="95" x2="140" y2="110" stroke="#a8e6a3" stroke-width="2"/>
+        <!-- C(=O)O -->
+        <line x1="140" y1="110" x2="125" y2="125" stroke="#a8e6a3" stroke-width="2"/>
+        <line x1="125" y1="125" x2="110" y2="118" stroke="#a8e6a3" stroke-width="2"/>
+        <line x1="125" y1="125" x2="128" y2="142" stroke="#a8e6a3" stroke-width="1.5"/>
+        <text x="105" y="120" text-anchor="middle" fill="#e8877a" font-size="10" font-family="Inter">OH</text>
+        <text x="130" y="154" text-anchor="middle" fill="#e8877a" font-size="10" font-family="Inter">O</text>
+        <!-- N+(CH3)3 -->
+        <line x1="155" y1="95" x2="175" y2="105" stroke="#a8e6a3" stroke-width="2"/>
+        <text x="180" y="108" text-anchor="middle" fill="#7ec8e3" font-size="10" font-family="Inter">N⁺</text>
+        <text x="180" y="122" text-anchor="middle" fill="#888" font-size="8" font-family="Inter">(CH₃)₃</text>
+        <!-- Title -->
+        <text x="140" y="180" text-anchor="middle" fill="#aaa" font-size="10" font-family="Inter" font-style="italic">2-mercapto-L-histidine betaine</text>
+      </svg>
+      <p style="font-size:0.5em; color:#888; line-height:1.5; margin-top:0.2em; text-align:center;">
+        Discovered <span class="highlight">1909</span><br>
+        Charles Tanret isolated it from ergot fungus.<br><br>
+        It took nearly a century to understand<br>
+        <span class="accent">why biology bothered to keep it.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 3 — TIMELINE + EPOCHS -->
+<section>
+  <h2>Observation → Discovery → Mechanism → Intervention</h2>
+  <p class="subtitle">PubMed publications · "ergothioneine" · total: 1,157</p>
+  <div class="chart-container">
+    <div class="epoch-band">
+      <div class="epoch-segment epoch-obs">I: Observation</div>
+      <div class="epoch-segment epoch-disc">II: Discovery without Understanding</div>
+      <div class="epoch-segment epoch-flash">III</div>
+      <div class="epoch-segment epoch-curr">Current: Mechanistic Biology &amp; RCTs</div>
+    </div>
+    <div style="position:relative;">
+      <div style="position:absolute; top:0; bottom:16px; width:2px; background:#f0c040; left:25%;"></div>
+      <div style="position:absolute; top:-12px; left:25%; transform:translateX(-50%); font-size:0.3em; color:#f0c040; font-weight:600; white-space:nowrap;">▼ OCTN1 (2005)</div>
+      <div class="bar-chart" id="pubChart"></div>
+    </div>
+  </div>
+  <div style="font-size:0.4em; color:#666; line-height:1.3;">
+    <span style="color:#8b7355;">■</span> Epoch I: Ancient longevity tonics, Bencao Gangmu, ergotism&nbsp;&nbsp;&nbsp;
+    <span style="color:#5a6a7a;">■</span> Epoch II: "A molecule in search of a function"&nbsp;&nbsp;&nbsp;
+    <span style="color:#c09840;">■</span> III: OCTN1 discovered&nbsp;&nbsp;&nbsp;
+    <span style="color:#2a7a5a;">■</span> Current: 161 papers in 2025
+  </div>
+  <script>
+    (function(){
+      var data = {2001:3,2002:5,2003:3,2004:5,2005:11,2006:9,2007:11,2008:11,2009:15,2010:17,2011:25,2012:25,2013:25,2014:25,2015:29,2016:37,2017:29,2018:35,2019:47,2020:51,2021:62,2022:81,2023:81,2024:113,2025:161,2026:96};
+      var max = 170, container = document.getElementById('pubChart');
+      for (var y = 2000; y <= 2026; y++) {
+        var bar = document.createElement('div');
+        bar.className = 'bar';
+        var count = data[y] || 0;
+        bar.style.height = Math.max(Math.round((count / max) * 165), 2) + 'px';
+        var label = document.createElement('div');
+        label.className = 'bar-label';
+        label.textContent = y % 5 === 0 ? y : '';
+        bar.appendChild(label);
+        container.appendChild(bar);
+      }
+    })();
+  </script>
+</section>
+
+<!-- SLIDE 4 — OCTN1 -->
+<section>
+  <h2>Why Biology Dedicated a Transporter</h2>
+  <p style="font-size:0.55em; color:#888; margin-bottom:0.3em;">Most molecules diffuse or degrade. EGT has its own active import system.</p>
+  <div class="two-col">
+    <div style="text-align:left;">
+      <ul>
+        <li><strong>OCTN1 (SLC22A4)</strong> — selectively transports EGT with Km ~20 µM, <span class="highlight">10–100× higher affinity</span> than any other substrate</li>
+        <li>Conserved across mammals, birds, fish — <span class="accent">evolution maintained this system</span></li>
+        <li>Expressed in erythrocytes, liver, kidney, intestine, brain endothelium</li>
+      </ul>
+      <p style="font-size:0.6em; color:#7ec8e3; margin-top:0.5em;"><strong>Crosses the BBB:</strong> OCTN1 on brain capillary endothelium transports EGT into CNS. Detectable in CSF.</p>
+    </div>
+    <div style="background:#1a1a2e; border-radius:6px; padding:0.5em; text-align:center;">
+      <p style="color:#f0c040; font-weight:600; font-size:0.6em;">The Evolutionary Question</p>
+      <p style="font-size:0.6em; line-height:1.5;">
+        "Why does the genome dedicate<br>
+        a transporter to a single amino acid?"<br><br>
+        <span class="accent">Organisms that could scavenge and retain EGT<br>
+        out-reproduced those that could not.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 5 — HUMAN EVIDENCE (OUTCOMES FIRST) -->
+<section>
+  <h2>Human Data: Outcomes First</h2>
+  <div class="two-col">
+    <div>
+      <div class="outcome-card">
+        <div class="stat">21% lower CV mortality</div>
+        <div class="desc">Smith et al. 2020 — Malmö Diet &amp; Cancer Study<br>
+        N=3,236 · 21.4 years · HR 0.79 (p=0.002) · fully adjusted</div>
+      </div>
+      <div class="outcome-card">
+        <div class="stat">14% lower all-cause mortality</div>
+        <div class="desc">Per 1 SD higher plasma EGT · HR 0.86 (p=4×10⁻⁵)<br>
+        Independent of age, sex, smoking, BP, cholesterol</div>
+      </div>
+      <p style="font-size:0.45em; color:#888; margin-top:0.3em;">EGT was the <span class="highlight">strongest dietary biomarker</span> of 112 metabolites measured.</p>
+    </div>
+    <div>
+      <div class="outcome-card" style="border-left-color:#7ec8e3;">
+        <div class="stat" style="color:#7ec8e3;">Cognitive stabilization</div>
+        <div class="desc">Yau et al. 2024 — J Alzheimers Dis<br>
+        25mg 3×/wk · 1 year · MCI patients · safe, improved learning</div>
+      </div>
+      <div class="outcome-card" style="border-left-color:#7ec8e3;">
+        <div class="stat" style="color:#7ec8e3;">Sleep improvement</div>
+        <div class="desc">Katsube et al. 2022 · 20mg/day · 4 weeks · PSQI + EEG</div>
+      </div>
+      <div class="outcome-card" style="border-left-color:#7ec8e3;">
+        <div class="stat" style="color:#7ec8e3;">Ovarian reserve (120mg safe)</div>
+        <div class="desc">PMID 42310611 · 2026 · open-label · highest human dose tested</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 6 — TAXONOMY MAP -->
+<section>
+  <h2>EGT &amp; the Hallmarks of Aging</h2>
+  <p class="subtitle">Six domains studied — one gap</p>
+  <div class="taxonomy-grid">
+    <div class="taxonomy-card">
+      <div class="domain-name">Oxidative Stress</div>
+      <div style="font-size:0.4em; color:#555;">[5,7,8]</div>
+    </div>
+    <div class="taxonomy-card">
+      <div class="domain-name">Telomere Attrition</div>
+      <div style="font-size:0.4em; color:#555;">[1]</div>
+    </div>
+    <div class="taxonomy-card">
+      <div class="domain-name">Senescence Escape</div>
+      <div style="font-size:0.4em; color:#555;">[2,3,4,6]</div>
+    </div>
+    <div class="taxonomy-card">
+      <div class="domain-name">Mitochondrial Redox</div>
+      <div style="font-size:0.4em; color:#555;">[9,10,11]</div>
+    </div>
+    <div class="taxonomy-card">
+      <div class="domain-name">Neuroprotection</div>
+      <div style="font-size:0.4em; color:#555;">[12,13,14]</div>
+    </div>
+    <div class="taxonomy-card our-gap">
+      <span class="badge">GAP</span>
+      <div class="domain-name">Epigenetic Drift</div>
+      <div style="font-size:0.4em; color:#f0c040aa;">→ This RCT</div>
+    </div>
+  </div>
+  <p style="font-size:0.45em; color:#666; margin-top:0.3em;">Epidemiology (Smith 2020) + mechanisms across multiple hallmarks — but <span class="highlight">nobody has benchmarked EGT against DNA methylation clocks.</span></p>
+</section>
+
+<!-- SLIDE 7 — THE GAP -->
+<section>
+  <h2>The Gap This RCT Fills</h2>
+  <div style="max-width:80%; margin:0.3em auto;">
+    <p style="font-size:0.7em; line-height:1.6;">
+      We have <span class="accent">epidemiology</span> — 21-year mortality data<br>
+      We have <span class="accent">mechanisms</span> — SIRT6, MPST, Nrf2, telomeres<br>
+      We have <span class="accent">clinical pilots</span> — cognition, sleep, ovarian reserve<br><br>
+      <span class="highlight" style="font-size:1.1em;">What we don't have:</span><br><br>
+      <strong style="font-size:1.2em; color:#f0c040;">A benchmark against the gold standard of biological aging.</strong><br><br>
+      <span style="font-size:0.55em; color:#888;">Corley 2025 proved metabolic interventions shift GrimAge2 (−2.3 yr), PhenoAge (−4.9 yr), DunedinPACE (−0.09) in 32 weeks. EGT's SIRT6 mechanism is chromatin-based — a different path to the same endpoint.</span>
+    </p>
+  </div>
+</section>
+
+<!-- SLIDE 8 — RCT DESIGN SNAPSHOT -->
+<section>
+  <h2>RCT Design Snapshot</h2>
+  <table class="table-inline">
+    <thead><tr><th style="width:25%;">Parameter</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td>Design</td><td>Double-blind, placebo-controlled, parallel 1:1</td></tr>
+      <tr><td>N</td><td>160 (80/arm) · 50–70 yr · healthy</td></tr>
+      <tr><td>Dose</td><td>EGT 30 mg/day vs microcrystalline cellulose placebo</td></tr>
+      <tr><td>Duration</td><td>12 months core + optional 18-month extension</td></tr>
+      <tr><td><strong>Primary</strong></td><td>GrimAge2 EAA → PhenoAge → DunedinPACE (<span class="highlight">hierarchical</span>)</td></tr>
+      <tr><td>Secondary mech.</td><td>Plasma EGT, IL-6, hs-CRP, TNFα, 8-OHdG, GSH/GSSG, OCTN1 genotype</td></tr>
+      <tr><td>Secondary func.</td><td>Cognition (Cogstate/NIH Toolbox), skin aging, grip strength, gait speed</td></tr>
+      <tr><td>Exploratory</td><td>PSQI sleep, FSS fatigue, optional multi-omics sub-study</td></tr>
+      <tr><td>Site</td><td>Fifth Affiliated Hospital, Sun Yat-sen University (Zhuhai) + King Cell Jiamei</td></tr>
+      <tr><td>Power</td><td>80% for δ = 0.50 in GrimAge2 EAA, α = 0.05 two-sided</td></tr>
+    </tbody>
+  </table>
+  <p class="footer-note">All three clocks from a single Illumina EPIC v2.0 array — no additional sample required.</p>
+</section>
+
+<!-- SLIDE 9 — THANK YOU -->
+<section>
+  <h1>Thank You</h1>
+  <p class="subtitle" style="margin-top:0.2em;">Questions &amp; Discussion</p>
+  <p style="font-size:0.5em; color:#666; margin-top:1em;">Michael Barrow · Stanford University / King Cell Jiamei</p>
+  <p style="font-size:0.4em; color:#555; margin-top:0.5em;">Protocol: EGT_RCT_Protocol.tex</p>
+  <div style="font-size:0.35em; color:#444; margin-top:1.5em;">Snyder Group Presentation · July 2026</div>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    controls: true,
+    progress: true,
+    center: true,
+    transition: 'fade',
+    width: 1280,
+    height: 800,
+    margin: 0.04
+  });
+</script>
+</body>
+</html>
